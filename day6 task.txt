@@ -1,0 +1,32 @@
+
+1. create a class person to hold all the details:
+
+class person{
+   constructor(firstName,lastName,age,place){
+   this.firstName = firstName;
+   this.lastName= lastName;
+   this.age  = age;
+   this.place= place;
+}
+let person1 = new person("Shreyas","iyer","27","mumbai");
+let person2 = new person("Sanju","samson","27","kerala");
+let person3 = new person("Ms","Dhoni","37","pune");
+let person4 = new person("Hardik","pandya","34","gujarat");
+
+
+
+2. create a class uber and calculate the price:
+
+class uber{
+     constructor(distance,rate,waitingperiod){
+     this.distance=distance;
+     this.rate=rate;
+     this.waitingperiod= waitingperiod;
+ }
+     getPrice(){
+    let totalprice= (this.rate * this.distance)+(this.waitingperiod*5);
+   return totalprice;
+   }
+     }
+   let uber1=new uber(20,5,15)
+   console.log(uber1.getPrice());
